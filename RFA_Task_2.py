@@ -18,14 +18,14 @@ time_stamps = []
 #basic 
 print("1 - Data reading from USB bus")
 print("2 - Emulate")
-mode = -0
+mode = 0
 while mode != 1 and mode != 2:
     mode = int(input("Select mode number:   "))
     if mode != 1 and mode != 2:
         print("Enter valid mode number!\n")
-if mode == 1:
+if mode == 2:
     mode = 'emulate'
-elif mode == 2:
+elif mode == 1:
     mode = 'read'
     port_name = input("Enter serial port:    ")
 
